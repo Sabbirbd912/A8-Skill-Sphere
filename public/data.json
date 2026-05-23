@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "slug": "complete-web-development-bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "students": 1540,
+    "price": 59,
+    "level": "Beginner",
+    "category": "Development",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "shortDescription": "Learn modern full-stack web development.",
+    "description": "Master HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB from scratch.",
+    "curriculum": [
+      "HTML & CSS Basics",
+      "JavaScript Fundamentals",
+      "React Basics",
+      "Backend with Node.js",
+      "MongoDB Integration"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Advanced React & Next.js Masterclass",
+    "slug": "advanced-react-nextjs-masterclass",
+    "instructor": "Sarah Jenkins",
+    "duration": "15 hours",
+    "rating": 4.9,
+    "students": 1240,
+    "price": 79,
+    "level": "Advanced",
+    "category": "Development",
+    "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "shortDescription": "Master React and Next.js App Router.",
+    "description": "Build scalable modern web applications using React, Next.js, authentication, and APIs.",
+    "curriculum": [
+      "React Hooks",
+      "Next.js Routing",
+      "Server Components",
+      "Authentication",
+      "Deployment"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Fundamentals",
+    "slug": "ui-ux-design-fundamentals",
+    "instructor": "Alex Rivera",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "students": 980,
+    "price": 49,
+    "level": "Beginner",
+    "category": "Design",
+    "thumbnail": "https://images.unsplash.com/photo-1558655146-9f40138edfeb",
+    "shortDescription": "Learn modern UI/UX design principles.",
+    "description": "Understand user research, wireframing, prototyping, and Figma workflows.",
+    "curriculum": [
+      "Design Principles",
+      "Wireframing",
+      "Figma Basics",
+      "Prototype Design",
+      "User Testing"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Python for Data Science",
+    "slug": "python-for-data-science",
+    "instructor": "Dr. Alan Turing",
+    "duration": "28 hours",
+    "rating": 4.7,
+    "students": 1890,
+    "price": 89,
+    "level": "Intermediate",
+    "category": "Data Science",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
+    "shortDescription": "Analyze and visualize data using Python.",
+    "description": "Learn NumPy, Pandas, Matplotlib, and machine learning fundamentals.",
+    "curriculum": [
+      "Python Basics",
+      "Pandas & NumPy",
+      "Data Visualization",
+      "Machine Learning Intro",
+      "Mini Projects"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Strategy",
+    "slug": "digital-marketing-strategy",
+    "instructor": "Emma Watson",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "students": 760,
+    "price": 39,
+    "level": "Beginner",
+    "category": "Marketing",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "shortDescription": "Grow businesses with digital marketing.",
+    "description": "Learn SEO, social media marketing, Google Ads, and email campaigns.",
+    "curriculum": [
+      "SEO Basics",
+      "Google Ads",
+      "Social Media Marketing",
+      "Email Marketing",
+      "Analytics"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Cyber Security Essentials",
+    "slug": "cyber-security-essentials",
+    "instructor": "Michael Scott",
+    "duration": "18 hours",
+    "rating": 4.8,
+    "students": 1120,
+    "price": 69,
+    "level": "Intermediate",
+    "category": "Cyber Security",
+    "thumbnail": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
+    "shortDescription": "Protect systems and networks from attacks.",
+    "description": "Understand ethical hacking, cyber threats, and network security fundamentals.",
+    "curriculum": [
+      "Cyber Security Basics",
+      "Network Defense",
+      "Ethical Hacking",
+      "Threat Analysis",
+      "Security Best Practices"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Mobile App Development with Flutter",
+    "slug": "mobile-app-development-with-flutter",
+    "instructor": "David Warner",
+    "duration": "16 hours",
+    "rating": 4.7,
+    "students": 940,
+    "price": 59,
+    "level": "Intermediate",
+    "category": "Mobile Development",
+    "thumbnail": "https://images.unsplash.com/photo-1551650975-87deedd944c3",
+    "shortDescription": "Build Android and iOS apps using Flutter.",
+    "description": "Learn Dart, Flutter widgets, API integration, and app deployment.",
+    "curriculum": [
+      "Flutter Basics",
+      "Widgets & Layout",
+      "State Management",
+      "API Integration",
+      "Publish Apps"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cloud Computing with AWS",
+    "slug": "cloud-computing-with-aws",
+    "instructor": "James Anderson",
+    "duration": "24 hours",
+    "rating": 4.8,
+    "students": 1320,
+    "price": 99,
+    "level": "Advanced",
+    "category": "Cloud Computing",
+    "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "shortDescription": "Master AWS cloud infrastructure.",
+    "description": "Learn EC2, S3, IAM, deployment pipelines, and cloud architecture.",
+    "curriculum": [
+      "AWS Basics",
+      "EC2 & S3",
+      "IAM Security",
+      "Cloud Deployment",
+      "Scaling Applications"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Artificial Intelligence Basics",
+    "slug": "artificial-intelligence-basics",
+    "instructor": "Andrew Miles",
+    "duration": "19 hours",
+    "rating": 4.7,
+    "students": 1680,
+    "price": 79,
+    "level": "Beginner",
+    "category": "Artificial Intelligence",
+    "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    "shortDescription": "Explore the fundamentals of AI.",
+    "description": "Understand neural networks, machine learning, and real-world AI applications.",
+    "curriculum": [
+      "Introduction to AI",
+      "Machine Learning Basics",
+      "Neural Networks",
+      "AI Tools",
+      "AI Projects"
+    ]
+  }
+]
