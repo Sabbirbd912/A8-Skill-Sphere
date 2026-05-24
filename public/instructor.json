@@ -1,0 +1,71 @@
+{
+  "sectionTitle": "🏆 Top Instructors",
+  "sectionSubtitle": "Learn From Experts",
+  "sectionDescription": "Our courses are taught by industry professionals who bring years of real-world experience directly to your screen.",
+  "instructors": [
+    {
+      "id": "inst-1",
+      "name": "Dr. Angela Yu",
+      "role": "Lead Web Development Instructor",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+      "rating": 4.9,
+      "totalStudents": 245000,
+      "totalCourses": 12,
+      "bio": "Developer and tech enthusiast dedicated to teaching programming through interactive, step-by-step masterclasses.",
+      "specialties": ["Full-Stack", "JavaScript", "Python"],
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "github": "https://github.com",
+        "twitter": "https://twitter.com"
+      }
+    },
+    {
+      "id": "inst-2",
+      "name": "Brad Traversy",
+      "role": "Senior Software Engineer & Educator",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+      "rating": 4.8,
+      "totalStudents": 182000,
+      "totalCourses": 8,
+      "bio": "Founder of Traversy Media, specializing in turning complex modern backend and frontend concepts into highly practical tutorials.",
+      "specialties": ["MERN Stack", "Next.js", "DevOps"],
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "github": "https://github.com",
+        "twitter": "https://twitter.com"
+      }
+    },
+    {
+      "id": "inst-3",
+      "name": "Sarah Jenkins",
+      "role": "UI/UX Design Architect",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+      "rating": 4.9,
+      "totalStudents": 94000,
+      "totalCourses": 5,
+      "bio": "Former product designer at top tech firms, focusing on human-centered interface design, wireframing, and accessible web experiences.",
+      "specialties": ["Figma", "UI/UX Design", "Design Systems"],
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "github": "",
+        "twitter": "https://twitter.com"
+      }
+    },
+    {
+      "id": "inst-4",
+      "name": "Jonas Schmedtmann",
+      "role": "Senior Frontend Architect",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      "rating": 4.8,
+      "totalStudents": 310000,
+      "totalCourses": 6,
+      "bio": "Passionate about deep-diving into core mechanics of web standards and building beautiful, component-driven layouts.",
+      "specialties": ["React", "Advanced CSS", "Tailwind"],
+      "socials": {
+        "linkedin": "https://linkedin.com",
+        "github": "https://github.com",
+        "twitter": ""
+      }
+    }
+  ]
+}

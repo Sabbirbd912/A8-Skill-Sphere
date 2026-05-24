@@ -1,0 +1,53 @@
+{
+  "sectionTitle": "📌 Learning Tips & Hacks",
+  "sectionSubtitle": "Grow Smarter",
+  "sectionDescription": "Using the right study techniques and managing your time properly can easily double your learning speed.",
+  "categories": [
+    {
+      "id": "study-techniques",
+      "categoryName": "Effective Study Techniques",
+      "categoryIcon": "💡",
+      "themeColor": "indigo",
+      "tips": [
+        {
+          "id": "st-1",
+          "iconName": "Brain",
+          "title": "Active Recall",
+          "desc": "Instead of just passively rereading text, quiz yourself on the concepts. Testing your memory keeps your brain highly engaged and helps retain data longer."
+        },
+        {
+          "id": "st-2",
+          "iconName": "BookOpen",
+          "title": "Feynman Technique",
+          "desc": "Try explaining a complex topic in the simplest terms possible, as if you are teaching it to a 10-year-old child. This quickly exposes any gaps in your understanding."
+        },
+        {
+          "id": "st-3",
+          "iconName": "Target",
+          "title": "Spaced Repetition",
+          "desc": "Review what you learned at increasing intervals (e.g., after 1 day, 3 days, and then 7 days). This systematically shifts the information into your long-term memory."
+        }
+      ]
+    },
+    {
+      "id": "time-management",
+      "categoryName": "Time Management Tips",
+      "categoryIcon": "⏱️",
+      "themeColor": "emerald",
+      "tips": [
+        {
+          "id": "tm-1",
+          "iconName": "Clock",
+          "title": "Pomodoro Technique",
+          "desc": "Work or study with 100% focus for 25 minutes, then take a short 5-minute break to refresh your mind. Repeat this cycle to maintain long-lasting energy."
+        },
+        {
+          "id": "tm-2",
+          "iconName": "CheckCircle",
+          "title": "Eat the Frog",
+          "desc": "Identify your most difficult or important task of the day and finish it first thing in the morning. Completing it early removes stress for the rest of your day."
+        }
+      ]
+    }
+  ]
+}
