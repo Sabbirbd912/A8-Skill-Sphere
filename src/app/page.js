@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import PopularCourses from "@/components/PopularCourses";
 import TipsHack from "@/components/TipsHack";
+import TopInstructor from "@/components/TopInstructor";
 import Image from "next/image";
 
 export default async function Home() {
@@ -11,6 +12,7 @@ export default async function Home() {
       <Banner/>
       <PopularCourses/>
       <TipsHack data={tipsData}/>
+      <TopInstructor/>
     </div>
   );
 }

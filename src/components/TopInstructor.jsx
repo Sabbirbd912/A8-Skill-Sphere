@@ -1,0 +1,19 @@
+import InstructorCard from "./InstructorCard";
+
+const TopInstructor = async () => {
+    const res=await fetch("https://a8-skill-sphere.vercel.app/instructor.json");
+    const data=await res.json();
+    const topInstructor=data.instructors.slice(0,3)||[];
+    return (
+        <div>
+            <h2 className="text-4xl font-extrabold py-4 text-center mt-10">Our <span className="text-emerald-500">Popular</span> Courses</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                {topInstructor.map(instructor => (
+                    <InstructorCard key={instructor.id} instructor={instructor} />
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default TopInstructor;
