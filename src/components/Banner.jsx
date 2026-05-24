@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-[450px]"
+      className="relative bg-cover bg-center h-115"
       style={{
         backgroundImage: "url('/banner-photo.jpg')",
       }}
