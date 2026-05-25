@@ -9,10 +9,9 @@ const InstructorCard = ({ instructor }) => {
   return (
     <Card className="max-w-sm bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full p-5">
       
-      {/* Avatar Container with Hover Effect */}
       <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-indigo-50 group-hover:border-indigo-500 transition-colors duration-300 shadow-sm">
         <Image
-          src={instructor.avatar} // আপনার JSON ডাটার ইমেজ ফিল্ড
+          src={instructor.avatar}
           alt={instructor.name}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -20,27 +19,21 @@ const InstructorCard = ({ instructor }) => {
         />
       </div>
 
-      {/* Info Section */}
       <div className="text-center mt-5 flex-grow flex flex-col">
-        
-        {/* Name */}
         <h3 className="text-xl font-black text-slate-800 group-hover:text-indigo-600 transition-colors duration-200">
           {instructor.name}
         </h3>
         
-        {/* Role/Title Badge */}
         <div className="mt-1.5">
           <span className="inline-block text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
-            {instructor.role} {/* আপনার JSON এ 'role' বা 'title' যেটা আছে */}
+            {instructor.role} 
           </span>
         </div>
 
-        {/* Short Bio */}
         <p className="text-sm text-slate-500 mt-3 line-clamp-2 leading-relaxed flex-grow">
           {instructor.bio}
         </p>
 
-        {/* Stats Section (Rating & Students) */}
         <div className="grid grid-cols-2 gap-2 border-t border-slate-100 pt-4 mt-4 text-xs font-medium text-slate-600">
           <div className="border-r border-slate-100 py-1">
             <span className="text-amber-500 font-bold text-sm block">⭐ {instructor.rating}</span>
@@ -54,7 +47,6 @@ const InstructorCard = ({ instructor }) => {
           </div>
         </div>
 
-        {/* Social Links Placement (Optional) */}
         <div className="flex justify-center gap-3 mt-4 pt-2 text-slate-400">
           {instructor.socials?.linkedin && (
             <a href={instructor.socials.linkedin} target="_blank" rel="noreferrer" className="text-xs hover:text-indigo-600 transition-colors">

@@ -25,10 +25,10 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Image
                 src="/logo.png"
-                alt="pixgen logo"
+                alt="SkillSphere Logo"
                 width={32}
                 height={32}
-                className="dark:brightness-200"
+                className="w-8 h-8 object-contain dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
                 SkillSphere

@@ -7,7 +7,14 @@ const Navbar = () => {
     <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
-            <Image src={"/logo.png"} alt="logo" loading="eager" width={30} height={30} className="object-cover h-auto w-auto" />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            loading="eager"
+            width={30}
+            height={30}
+            className="w-[30px] h-[30px] object-contain"
+          />
           <h3 className="font-black text-lg">SkillSphere</h3>
         </div>
 

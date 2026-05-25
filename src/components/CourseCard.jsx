@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { Star, Users, Clock, ArrowUpRight } from "lucide-react";
 const CourseCard = ({ course }) => {
-  console.log(course);
   return (
     <div className="max-w-sm bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
 
