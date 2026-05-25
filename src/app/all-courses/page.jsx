@@ -1,7 +1,7 @@
 import CourseCard from "@/components/CourseCard";
 import React from "react";
 
-const CoursesPage = async () => {
+const AllCoursesPage = async () => {
   const response = await fetch("https://a8-skill-sphere.vercel.app/data.json");
   const data = await response.json();
 
@@ -17,4 +17,4 @@ const CoursesPage = async () => {
   );
 };
 
-export default CoursesPage;
+export default AllCoursesPage;

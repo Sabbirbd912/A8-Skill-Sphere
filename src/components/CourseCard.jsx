@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { Star, Users, Clock, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 const CourseCard = ({ course }) => {
   return (
     <div className="max-w-sm bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
-
       <div className="relative overflow-hidden aspect-video">
         <Image
           src={course.thumbnail}
@@ -65,10 +65,10 @@ const CourseCard = ({ course }) => {
             </span>
           </div>
 
-          <button className="inline-flex items-center gap-1 bg-slate-900 text-white font-medium text-sm px-4 py-2.5 rounded-xl hover:bg-indigo-600 transition-colors duration-200 shadow-sm">
+          <Link href={`all-courses/${course.id}`} className="inline-flex items-center gap-1 bg-slate-900 text-white font-medium text-sm px-4 py-2.5 rounded-xl hover:bg-indigo-600 transition-colors duration-200 shadow-sm">
             <span>Explore</span>
             <ArrowUpRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
