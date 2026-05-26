@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold">
-              <span className="bg-gradient-to-tr from-violet-600 via-violet-500 to-orange-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-tr from-violet-600 via-violet-500 to-orange-600 bg-clip-text text-transparent">
                 SkillSphere
               </span>
             </h2>

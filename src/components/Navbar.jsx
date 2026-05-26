@@ -22,7 +22,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b shadow-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold">
-          <span className="bg-gradient-to-tr from-violet-600 via-violet-500 to-orange-600 bg-clip-text text-transparent">
+          <span className="bg-linear-to-tr from-violet-600 via-violet-500 to-orange-600 bg-clip-text text-transparent">
             SkillSphere
           </span>
         </Link>

@@ -6,20 +6,20 @@ const TipsHack = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
-      <div className="text-center mb-12">
+    <section className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 max-w-7xl mx-auto">
+      <div className="text-center mb-8 sm:mb-10 md:mb-12">
         <span className="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
           {data.sectionSubtitle}
         </span>
-        <h2 className="text-3xl font-black text-slate-800 mt-3 sm:text-4xl">
+        <h2 className="bg-linear-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent text-3xl font-extrabold py-4 text-center">
           {data.sectionTitle}
         </h2>
-        <p className="text-slate-600 mt-2 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+        <p className="text-slate-600 mt-2 max-w-xl mx-auto font-medium sm:text-base leading-relaxed">
           {data.sectionDescription}
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8">
         {data.categories?.map((category) => {
           const isIndigo = category.themeColor === "indigo";
           const bgBadgeColor = isIndigo ? "bg-indigo-50" : "bg-emerald-50";
