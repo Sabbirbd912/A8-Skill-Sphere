@@ -10,18 +10,18 @@ import "swiper/css/navigation";
 const slides = [
   {
     image: "/banner-photo.jpg",
-    title: "Upgrade Your Skills Today 🚀",
+    title: "Upgrade Your Skills Today",
     subtitle:
       "Learn from industry experts and build your future with SkillSphere",
   },
   {
     image: "/banner2.jpg",
-    title: "Learn Anytime, Anywhere 💻",
+    title: "Learn Anytime, Anywhere",
     subtitle: "Access world-class courses from your home",
   },
   {
     image: "/banner3.jpg",
-    title: "Build Your Career With Us 🎯",
+    title: "Build Your Career With Us",
     subtitle: "Master real-world skills and get job-ready",
   },
 ];

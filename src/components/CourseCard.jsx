@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Star, Users, Clock, ArrowUpRight } from "lucide-react";
+import { Star, Users, Clock, ArrowRight } from "lucide-react";
 import Link from "next/link";
 const CourseCard = ({ course }) => {
   return (
@@ -25,8 +25,7 @@ const CourseCard = ({ course }) => {
         </div>
       </div>
 
-      <div className="p-5 flex flex-col flex-grow">
-        {/* Instructor & Meta info */}
+      <div className="p-5 flex flex-col grow">
         <div className="flex items-center justify-between text-xs text-slate-500 mb-2">
           <span className="font-medium text-indigo-600">
             By {course.instructor}
@@ -40,11 +39,11 @@ const CourseCard = ({ course }) => {
         <h3 className="text-lg font-bold text-slate-800 line-clamp-1 group-hover:text-indigo-600 transition-colors duration-200">
           {course.title}
         </h3>
-        <p className="text-sm text-slate-600 mt-1 mb-4 line-clamp-2 flex-grow">
+        <p className="text-sm text-slate-600 mt-1 mb-3 line-clamp-2 grow">
           {course.shortDescription}
         </p>
 
-        <div className="flex items-center gap-4 py-3 my-3 border-y border-slate-50 text-sm text-slate-600">
+        <div className="flex items-center justify-around gap-4 py-3 my-3 border-y border-slate-50 text-sm text-slate-600">
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
             <span className="font-bold text-slate-800">{course.rating}</span>
@@ -60,14 +59,14 @@ const CourseCard = ({ course }) => {
             <span className="text-xs text-slate-400 block font-medium">
               Price
             </span>
-            <span className="text-2xl font-black text-slate-900">
+            <span className="text-2xl font-black text-slate-600">
               ${course.price}
             </span>
           </div>
 
-          <Link href={`all-courses/${course.id}`} className="inline-flex items-center gap-1 bg-slate-900 text-white font-medium text-sm px-4 py-2.5 rounded-xl hover:bg-indigo-600 transition-colors duration-200 shadow-sm">
-            <span>Explore</span>
-            <ArrowUpRight className="w-4 h-4" />
+          <Link href={`all-courses/${course.id}`} className="inline-flex items-center gap-1 bg-slate-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl hover:bg-indigo-400 transition-colors duration-200 shadow-sm">
+            <span>Learn More</span>
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
