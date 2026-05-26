@@ -32,7 +32,7 @@ const Navbar = () => {
             <li key={link.name}>
               <Link
                 href={link.path}
-                className="hover:text-orange-500 transition-colors duration-300"
+                className="block px-2 py-2 text-slate-700 rounded-xl hover:bg-violet-500/15 hover:text-violet-700 transition-all duration-300 font-medium"
               >
                 {link.name}
               </Link>
@@ -44,11 +44,20 @@ const Navbar = () => {
         {!user ? (
           <div className="flex items-center gap-3">
             <Link href="/signin">
-              <Button variant="outline">Sign In</Button>
+              <Button
+                variant="outline"
+                className="border-blue-700 font-bold hover:bg-blue-50/50 transition-colors"
+              >
+                <span className="bg-gradient-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent">
+                  Sign In
+                </span>
+              </Button>
             </Link>
 
             <Link href="/signup">
-              <Button variant="outline">Sign Up</Button>
+              <Button className="bg-gradient-to-tr from-violet-600 via-violet-500 to-orange-600 text-white font-bold shadow-md hover:opacity-90 transition-opacity">
+                Sign Up
+              </Button>
             </Link>
           </div>
         ) : (

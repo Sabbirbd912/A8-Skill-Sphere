@@ -36,7 +36,7 @@ const TipsHack = ({ data }) => {
                   <span className={`text-2xl p-2.5 ${bgBadgeColor} rounded-xl shadow-inner`}>
                     {category.categoryIcon}
                   </span>
-                  <h3 className="text-xl font-bold text-slate-800">
+                  <h3 className="text-xl font-bold text-slate-600">
                     {category.categoryName}
                   </h3>
                 </div>
@@ -49,10 +49,10 @@ const TipsHack = ({ data }) => {
                       </div>
                       
                       <div>
-                        <h4 className={`font-bold text-slate-800 transition-colors duration-200 ${titleHoverColor}`}>
+                        <h4 className={`font-bold text-slate-600 transition-colors duration-200 ${titleHoverColor}`}>
                           {tip.title}
                         </h4>
-                        <p className="text-sm text-slate-600 mt-1 leading-relaxed">
+                        <p className=" text-slate-600 mt-1 leading-relaxed">
                           {tip.desc}
                         </p>
                       </div>
