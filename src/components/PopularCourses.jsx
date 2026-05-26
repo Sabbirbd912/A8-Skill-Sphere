@@ -1,8 +1,7 @@
 import CourseCard from "./CourseCard";
+import data from "../../public/data.json";
 
-const PopularCourses = async () => {
-  const res = await fetch("https://a8-skill-sphere.vercel.app/data.json");
-  const data = await res.json();
+const PopularCourses = () => {
   const popularCourses = data.slice(0, 3);
   return (
     <div>

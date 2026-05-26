@@ -2,11 +2,10 @@ import { Clock, Star, User, Users } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { Button, Card } from "@heroui/react";
+import courses from "../../../../public/data.json";
 
 const CourseDetailsPage = async ({ params }) => {
   const { id } = await params;
-  const response = await fetch(`https://a8-skill-sphere.vercel.app/data.json`);
-  const courses = await response.json();
   const singleCourse = courses.find((course) => course.id == id);
   return (
     <div className="min-h-1/2 w-full flex items-center justify-center pt-16">

@@ -1,8 +1,7 @@
 import InstructorCard from "./InstructorCard";
+import data from "../../public/instructor.json";
 
-const TopInstructor = async () => {
-    const res=await fetch("https://a8-skill-sphere.vercel.app/instructor.json");
-    const data=await res.json();
+const TopInstructor = () => {
     const topInstructor=data.instructors.slice(0,3)||[];
     return (
         <div>
