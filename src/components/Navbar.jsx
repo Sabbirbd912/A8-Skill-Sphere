@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth.client";
 import Link from "next/link";
 import { Avatar, Button } from "@heroui/react";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const userData = authClient.useSession();
@@ -10,6 +11,7 @@ const Navbar = () => {
 
   const handleSignOut = async () => {
     await authClient.signOut();
+    toast.error("Sign Out successful!");
   };
 
   const navLinks = [
@@ -48,27 +50,33 @@ const Navbar = () => {
                 variant="outline"
                 className="border-blue-700 font-bold hover:bg-blue-50/50 transition-colors"
               >
-                <span className="bg-gradient-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent">
+                <span className="bg-linear-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent">
                   Sign In
                 </span>
               </Button>
             </Link>
 
             <Link href="/signup">
-              <Button className="bg-gradient-to-tr from-violet-600 via-violet-500 to-orange-600 text-white font-bold shadow-md hover:opacity-90 transition-opacity">
+              <Button className="bg-linear-to-tr from-violet-600 via-violet-500 to-orange-600 text-white font-bold shadow-md hover:opacity-90 transition-opacity animate-pulse ">
                 Sign Up
               </Button>
             </Link>
           </div>
         ) : (
           <div className="flex items-center gap-4">
-            <Avatar
-              src={user?.image}
-              name={user?.name}
-              className="cursor-pointer"
-            />
+            <Avatar>
+              <Avatar.Image
+                alt={user?.name}
+                src={user?.image}
+                referrerPolicy="no-referrer"
+              />
+              <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+            </Avatar>
 
-            <Button variant="danger" onClick={handleSignOut}>
+            <Button
+              onClick={handleSignOut}
+              className="bg-linear-to-r from-red-500 to-pink-600 text-white font-medium px-5 py-2 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300"
+            >
               Sign Out
             </Button>
           </div>

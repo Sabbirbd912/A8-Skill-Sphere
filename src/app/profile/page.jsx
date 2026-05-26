@@ -11,11 +11,12 @@ const ProfilePage = () => {
   return (
     <div>
       <Card className="border mx-auto w-125 py-10 mt-5 flex flex-col items-center gap-4">
-        <Avatar className="h-32 w-32">
+        <Avatar className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
           <Avatar.Image
             alt="Sabbir Ahmed"
             src={user?.image}
             referrerPolicy="no-referrer"
+            className="object-cover"
           />
           <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
         </Avatar>

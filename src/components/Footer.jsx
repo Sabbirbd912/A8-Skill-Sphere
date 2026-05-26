@@ -76,15 +76,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} SoftPolli. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} <span className="font-semibold animate-pulse">SoftPolli</span>. All rights reserved.</p>
 
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-orange-500">
-              Privacy
-            </Link>
-            <Link href="/terms" className="hover:text-orange-500">
-              Terms
-            </Link>
+            <h2>Developed By <span className="text-emerald-950 font-semibold animate-pulse">Sabbir Ahmed</span></h2>
           </div>
         </div>
       </div>

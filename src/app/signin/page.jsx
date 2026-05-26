@@ -4,6 +4,8 @@ import { authClient } from "@/lib/auth.client";
 import { Check } from "@gravity-ui/icons";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 import {
   Button,
   Card,
@@ -34,13 +36,12 @@ export default function SignInPage() {
       });
 
       if (error) {
-        console.error("Sign in error:", error.message);
-        alert(error.message || "Something went wrong!");
+        toast.error(error.message || "Invalid email or password");
         setLoading(false);
         return;
       }
-
       if (data) {
+        toast.success("Login successful!");
         router.push("/");
         router.refresh();
       }
@@ -49,15 +50,17 @@ export default function SignInPage() {
     }
   };
 
-  const handleGoogleSignIn=async ()=>{
-     const data = await authClient.signIn.social({
-    provider: "google",
-  });
-  }
+  const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  };
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign In</h1>
+    <Card className="border mx-auto w-125 py-10 mt-18">
+      <h2 className="bg-linear-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent text-center text-2xl font-bold">
+        Sign In
+      </h2>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField
@@ -111,11 +114,17 @@ export default function SignInPage() {
           </Button>
         </div>
       </Form>
-
-      <p className=" pt-2 mx-auto">Or sign up with:</p>
-      <Button onClick={handleGoogleSignIn} variant="outline" className="w-full mt-2">
-        Google
-      </Button>
+      <div className="flex flex-col items-center justify-center">
+        <p className="text-sm">Or</p>
+        <Button
+          onClick={handleGoogleSignIn}
+          variant="outline"
+          className="w-sm mt-2"
+        >
+          Sign Up with <FcGoogle />
+          Google
+        </Button>
+      </div>
     </Card>
   );
 }

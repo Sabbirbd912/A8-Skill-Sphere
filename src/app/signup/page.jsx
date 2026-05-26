@@ -2,10 +2,12 @@
 import { authClient } from "@/lib/auth.client";
 import { Check } from "@gravity-ui/icons";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 import {
   Button,
   Card,
   Description,
+  errorMessageVariants,
   FieldError,
   Form,
   Input,
@@ -29,13 +31,21 @@ export default function SignUpPage() {
       image,
     });
     // console.log(data, error);
+    if (error) {
+      toast.error(error.message || "Invalid email or password");
+      setLoading(false);
+      return;
+    }
     if (!error) {
+      toast.success("Sign in successful!");
       router.push("/");
     }
   };
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+    <Card className="border mx-auto w-125 py-10 mt-18">
+      <h2 className="bg-linear-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent text-center text-2xl font-bold">
+        Sign Up
+      </h2>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
@@ -104,7 +114,6 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
-
     </Card>
   );
 }
