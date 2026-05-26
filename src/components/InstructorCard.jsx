@@ -19,7 +19,7 @@ const InstructorCard = ({ instructor }) => {
         />
       </div>
 
-      <div className="text-center mt-5 flex-grow flex flex-col">
+      <div className="text-center mt-5 grow flex flex-col">
         <h3 className="text-xl font-black text-slate-800 group-hover:text-indigo-600 transition-colors duration-200">
           {instructor.name}
         </h3>
@@ -30,7 +30,7 @@ const InstructorCard = ({ instructor }) => {
           </span>
         </div>
 
-        <p className="text-sm text-slate-500 mt-3 line-clamp-2 leading-relaxed flex-grow">
+        <p className="text-sm text-slate-500 mt-3 line-clamp-2 leading-relaxed grow">
           {instructor.bio}
         </p>
 
