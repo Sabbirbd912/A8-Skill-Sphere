@@ -4,14 +4,17 @@ import { authClient } from "@/lib/auth.client";
 import Link from "next/link";
 import { Avatar, Button } from "@heroui/react";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const userData = authClient.useSession();
   const user = userData.data?.user;
 
   const handleSignOut = async () => {
     await authClient.signOut();
     toast.error("Sign Out successful!");
+    router.push("/signin");
   };
 
   const navLinks = [
@@ -42,7 +45,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Auth Section */}
         {!user ? (
           <div className="flex items-center gap-3">
             <Link href="/signin">

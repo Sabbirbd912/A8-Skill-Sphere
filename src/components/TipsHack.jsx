@@ -69,3 +69,4 @@ const TipsHack = ({ data }) => {
 };
 
 export default TipsHack;
+
