@@ -1,10 +1,9 @@
 import CourseCard from "@/components/CourseCard";
 import Link from "next/link";
+import data from "../../../public/data.json"
 const AllCoursesPage = async ({ searchParams }) => {
   const { search } = await searchParams;
 
-  const response = await fetch("https://a8-skill-sphere.vercel.app/data.json");
-  const data = await response.json();
 
   const filteredCourses = search
     ? data.filter((course) =>

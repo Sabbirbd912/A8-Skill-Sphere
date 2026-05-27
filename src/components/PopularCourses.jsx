@@ -1,9 +1,8 @@
 import CourseCard from "./CourseCard";
+import data from "../../public/data.json";
+const PopularCourses = () => {
 
-const PopularCourses = async () => {
-  const res = await fetch("https://a8-skill-sphere.vercel.app/data.json");
-  const data = await res.json();
-  const popularCourses = data.slice(0, 3);
+  const popularCourses = data?.slice(0, 3) || [];
   return (
     <div>
       <h2 className="bg-linear-to-tr from-black via-blue-800 to-blue-500 bg-clip-text text-transparent text-4xl font-extrabold py-4 text-center mt-10">
