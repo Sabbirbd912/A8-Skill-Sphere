@@ -9,7 +9,7 @@ const ProfilePage = () => {
   console.log(user);
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto w-full">
       <Card className="border mx-auto w-125 py-10 mt-5 flex flex-col items-center gap-4">
         <Avatar className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
           <Avatar.Image

@@ -104,12 +104,12 @@ export default function SignUpPage() {
           <FieldError />
         </TextField>
 
-        <div className="flex gap-2">
-          <Button type="submit">
+        <div className="flex gap-2 w-full">
+          <Button className="flex-1" type="submit">
             <Check />
             Submit
           </Button>
-          <Button type="reset" variant="secondary">
+          <Button className="flex-1" type="reset" variant="secondary">
             Reset
           </Button>
         </div>

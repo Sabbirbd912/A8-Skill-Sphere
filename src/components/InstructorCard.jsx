@@ -7,7 +7,7 @@ const InstructorCard = ({ instructor }) => {
   if (!instructor) return null;
 
   return (
-    <Card className="max-w-sm bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full p-5">
+    <Card className="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full p-5">
       
       <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-indigo-50 group-hover:border-indigo-500 transition-colors duration-300 shadow-sm">
         <Image

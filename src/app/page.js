@@ -7,10 +7,12 @@ import tipsData from "../../public/tips.json";
 export default async function Home() {
   return (
     <div >
-      <Banner/>
-      <PopularCourses/>
-      <TipsHack data={tipsData}/>
-      <TopInstructor/>
+      <Banner />
+      <div className="max-w-7xl mx-auto w-full">
+        <PopularCourses />
+        <TipsHack data={tipsData} />
+        <TopInstructor />
+      </div>
     </div>
   );
 }

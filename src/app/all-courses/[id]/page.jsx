@@ -18,7 +18,7 @@ const CourseDetailsPage = async ({ params }) => {
   }
 
   return (
-    <div className="min-h-1/2 w-full flex items-center justify-center pt-16">
+    <div className="max-w-7xl mx-auto w-full flex items-center justify-center pt-16">
       <Card className="w-10/12 border border-slate-100 bg-white p-5 flex flex-col md:flex-row items-center md:items-stretch gap-6 ">
         <div className="relative h-64 w-full md:h-60 md:w-60 shrink-0 overflow-hidden rounded-xl bg-slate-50">
           <Image

@@ -12,7 +12,7 @@ const AllCoursesPage = async ({ searchParams }) => {
     : data;
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto w-full">
       <Link href="/all-courses" className="block w-fit mx-auto group">
         <h2 className="bg-linear-to-r from-black via-blue-800 to-blue-500 bg-clip-text text-transparent text-3xl font-extrabold py-6 text-center group-hover:opacity-90 transition-opacity">
           Our All Courses

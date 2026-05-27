@@ -104,12 +104,12 @@ export default function SignInPage() {
           <FieldError />
         </TextField>
 
-        <div className="flex gap-2">
-          <Button type="submit" isLoading={loading}>
+        <div className="flex gap-2 w-full">
+          <Button className="flex-1" type="submit" isLoading={loading}>
             {!loading && <Check />}
             {loading ? "Signing In..." : "Submit"}
           </Button>
-          <Button type="reset" variant="secondary" isDisabled={loading}>
+          <Button className="flex-1" type="reset" variant="secondary" isDisabled={loading}>
             Reset
           </Button>
         </div>

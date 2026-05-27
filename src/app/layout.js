@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar />
-        <main className="max-w-7xl mx-auto w-full">{children}</main>
+        <main >{children}</main>
         <Footer />
         <ToastContainer
           position="top-right"
